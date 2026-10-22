@@ -14,7 +14,7 @@ app = FastAPI(title="Insurance Claim Fraud Detection API")
 # Allow the React app (running on port 5173) to call this backend.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://vehicle-insurance-fraud-detection-sigma.vercel.app/"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://vehicle-insurance-fraud-detection-sigma.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
